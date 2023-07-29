@@ -1,0 +1,116 @@
+<!DOCTYPE >
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__menu"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>COCKTAILS OF THE MONTH </h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1">
+      <div class="landing__container">
+        <h2>The Classic Martini </h2>
+        <p>Each sip of The Classic Martini is a testament to the artistry and precision that goes into crafting this masterpiece. Our skilled mixologists expertly combine premium gin or vodka with a touch of dry vermouth, creating a balanced and harmonious blend that dances gracefully on your palate.</p>
+        <h3>Sublime Simplicity</h3>
+        <p>The secret to The Classic Martini's allure lies in its simplicity. We believe that perfection is achieved through
+        restraint, which is why we use only the most essential ingredients. The result is a cocktail that lets the quality of
+        each element shine, without overwhelming your senses.</p>
+        <h3>Recipe</h3>
+        <p>
+          <li>2.5oz Grey Goose Vodka</li>
+          <li>0.5oz Dry Vermouth</li>
+        </p>
+        <p>Combine all ingredients into a shaker tin with ice. Stir and strain into a chilled coupe glass</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>The Infante</h2>
+        <p>Step into a world of captivating flavors with The Infante, an exquisite Margarita riff that redefines the boundaries of
+        taste. Crafted with aromatic orgeat and delicate rose water, this libation showcases the evolution of a cantina staple,
+        celebrating the artistry of mixology and the fusion of cultures.</p>
+        <h3>The Journey from NYC to You</h3>
+        <p>The Infante transcends borders and continents, with its roots tracing back to the vibrant streets of New York City.
+        Conceived by the masterful hands of Giuseppe González, this cocktail is a testament to the ingenuity of mixologists who
+        infuse passion and creativity into every drop.</p>
+        <h3>Recipe</h3>
+        <p>
+          <li>2oz Blanco Tequila</li>
+          <li>0.75oz Lime Juice</li>
+          <li>0.75oz Orgeat</li>
+          <li>2 dashes Rose Water</li>
+        </p>
+        <p>Combine all ingredients into a shaker tin with ice and shake until chilled. Strain into a rocks gladd over a large ice cube. Garnish with freshly ground nutmeg</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Negroni Sbagliato</h2>
+        <p>Sbagliato means 'mistaken' or 'broken' Negroni,” says Joe Campanale, owner of Brooklyn restaurants Fausto, LaLou and Bar
+        Vinazo. The drink's name comes from its alleged origin story: At Milan's Bar Basso, a guest ordered a Negroni, and the
+        bartender was so busy that he accidentally grabbed a bottle of prosecco instead of gin, resulting in a lower-proof,
+        sparkling version of the classic. Campanale's take on the drink, meanwhile, “is almost a 'broken' Sbagliato, in a way.”</p>
+        <h3>A 'Broken' Beauty</h3>
+        <p>In the hands of Joe Campanale, The Negroni Sbagliato receives a fresh interpretation, evoking the spirit of the original
+        'broken' cocktail. With a touch of innovation, Campanale's creation amplifies the essence of the Sbagliato, weaving a
+        story of transformation and reinvention.</p>
+        <h3>Recipe</h3>
+        <p>
+          <li>1oz Forthave Spirits Red Aperitivo</li>
+          <li>1oz Aperitivo Cappelletti</li>
+          <li>0.5oz Sweet Vermouth</li>
+          <li>1oz Sparkling Water</li>
+          <li>Prosecco to top</li>
+        </p>
+        <p>Combine the first three ingredients in a wine glass. Fill glass with ice. Add sparkling water and prosecco. Stir once or twice very gently to integrate, so as not to dissipate the bubbles. Garnish with an orange slice.</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>The Rattlesnake</h2>
+        <p>Prepare to embark on a journey of unexpected delights with The Rattlesnake, a cocktail that defies expectations and
+        redefines your palate's boundaries. Crafted with an intriguing blend of ingredients, including frothy egg whites and a hint of absinthe, this libation is a testament to the magic that transpires when balance and harmony come together.</p>
+        <h3>The Dance of Froth and Elixir</h3>
+        <p>Witness the mesmerizing dance of froth and elixir as the egg whites lend a luxurious texture to this libation. Combined
+        with the enigmatic allure of absinthe, each component brings forth a symphony of flavors that captivate your senses and
+        leave you craving more.</p>
+        <h3>Recipe</h3>
+        <p>
+          <li>2oz Buffale Trace Bourbon</li>
+          <li>0.75oz Lemon Juice</li>
+          <li>0.75oz Simple Syrup</li>
+          <li>2 dashes Absinthe</li>
+          <li>1 Egg White</li>
+        </p>
+        <p>Add all ingredients to a shaker and dry shake, without ice. Add ice and shake again until chilled. Fine-strain into a couple glass. Garnish with an Angostura bitters swirl.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+
+</body>
+<script src="./js/app.js"></script>
+</html>
+
+<a href="#"></a>
